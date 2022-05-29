@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AllMart forhandler billige og unikke produkter samt gadgets">
+    <meta name="keywords" content="Billig, gadgets, inspiation, personlig, unikke, sjov, produkter">
+    <meta name="author" content="Louise Christiansen, Stine Kleis">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Rajdhani:wght@300;400&family=Staatliches&display=swap" rel="stylesheet"> 
+    <script defer src="script.js"></script>
+    <title>Log ind │ Opret dig hos AllMart</title>
+</head>
+<body>
+    <!-- Vores header -->
+    <header>
+        <input type="checkbox" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+       
+        <a href="index.html"><img src="images/AllMartLogo.png" alt="AllMarts nye logo" class="logo"></a>
+
+        <nav class="navbar">
+            <a href="nyheder.html">Nyheder</a>
+            <a href="produkter.html">Produkter</a>
+            <a href="inspiration.html">Inspiration</a>
+            <a href="omos.html">Om os</a>
+        </nav>
+
+        <div class="ikoner">
+            <a data-modal-target="#modal" href="#modal" class="fas fa-search"></a>
+            <a href="bruger.html" class="fas fa-user"></a>
+            <a href="indkøbskurv.html" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+
+    <!-- Log ind side indhold -->
+    <aside class="account-side">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/Logind.jpg" alt="Oliver og Siv på deres lille lager" class="lager">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Log ind</span>
+                        <span onclick="register()">Opret log ind</span>
+                        <hr id="Indikator">
+                        </div>
+
+                        <form id="LogindForm">
+                            <p>Din email</p>
+                            <input type="email" placeholder="Email">
+                            <p>Din adgangskode</p>
+                            <input type="password" placeholder="Adgangskode">
+                            <button type="submit" class="btn">Log ind</button>
+                            <br>
+                            <br>
+                            <a href="#">Glemt min adgangskode</a>
+                        </form>
+
+                        <form id="OpretForm">
+                            <p>Dit navn</p>
+                            <input type="text" placeholder="Navn">
+                            <p>Din email</p>
+                            <input type="email" placeholder="Email">
+                            <p>Din adgangskode</p>
+                            <input type="password" placeholder="Adgangskode">
+                            <button type="submit" class="btn">Opret bruger</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+       <!-- Nydhedsbrev/kundeklub -->
+ <section id="newsletter">
+    <div class="newstext">
+        <h4>Tilmeld dig vores kundeklub</h4>
+        <p>Få de nyeste og bedste tilbud på mail, samt <span>10%</span> på din første ordre!</p>
+    </div>
+    <div class="mail">
+        <form name="form1" action="#">
+            <input type='text' name='text1' placeholder="Indtast email"/>
+            <input class="Validate" type="submit" name="submit" value="Tilmeld" onclick="ValidateEmail(document.form1.text1)"/>
+            </form>
+        </div>
+    </section>
+
+       <!-- Vores footer -->
+       <section class="footer">
+        <footer class="box-container">
+            <!-- Box 1 i vores footer -->
+            <div class="box">
+                <h3>Hjælp & information</h3>
+                <a href="#">Om os</a>
+                <a href="#">Levering</a>
+                <a href="#">Returnering & reklamation</a>
+                <a href="#">Handelsbetingelser</a>
+                <a href="#">Kontakt os</a>
+            </div>
+
+             <!-- Box 2 i vores footer -->
+            <div class="box">
+                <h3>Kundeservice</h3>
+                <a href="#">Min konto</a>
+                <a href="#">Min ordre</a>
+                <a href="#">Mine gemte favoriter</a>
+            </div>
+
+             <!-- Box 3 i vores footer -->
+            <div class="box">
+                <h3>Følg Allmart</h3>
+                <a href="https://www.facebook.com/AllMart-110988494833826/">Facebook</a>
+                <a href="https://www.instagram.com/allmartdk/?hl=da">Instagram</a>
+                <a href="https://www.tiktok.com/">TikTok</a>
+                <a href="https://dk.trustpilot.com/review/www.allmart.dk">Trustpilot</a>
+            </div>
+
+             <!-- Box 4 i vores footer -->
+            <div class="box">
+                <h3>Kontaktinformation</h3>
+                <a href="#">+45 50 43 45 05</a>
+                <a href="#">kontakt@allmart.dk</a>
+                <a href="#">Jupitervej 10 <br> <br> 7430 Ikast, Danmark</a>
+            </div>
+        </footer>
+            <div class="credit">Copyright © 2022, ejet af <span>Ecom Pioneers ApS</span>, CVR: 42761729 </div>
+            <img src="images/betalingsLogo.png" class="betaling" alt="Betalings muligheder">
+    </section>
+
+    <!-- Vores pop up samt søgebar -->
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Søg på produkter</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body"> 
+            <br>
+            <form id="form"> 
+            <input type="search" id="query" name="q" placeholder="Søg på produkter, mærker og kategorier...">
+            <button class="fas fa-search"></button>
+          </form>
+          <br>
+          <br>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+<!-- Javascript som gør at man kan toggle mellem log ind og opret log ind på vores bruger ikon -->
+    <script>
+        
+        var LogindForm = document.getElementById("LogindForm");
+        var OpretForm = document.getElementById("OpretForm");
+        var Indikator = document.getElementById("Indikator");
+
+        function register(){
+            OpretForm.style.transform = "translateX(0px)";
+            LogindForm.style.transform = "translateX(0px)";
+            Indikator.style.transform = "translateX(100px)";
+        }
+
+        function login(){
+            OpretForm.style.transform = "translateX(300px)";
+            LogindForm.style.transform = "translateX(300px)";
+            Indikator.style.transform = "translateX(0px)";
+        }
+    </script>
+
+<!-- Vores Cookie pop up  -->
+    <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
+    <script> window.start.init({Palette:"palette6",Mode:"banner bottom",Theme:"classic",Message:"Allmart.dk anvender cookies, herunder også tredjepartscookies, for at give dig en bedre brugeroplevelse. Her kan du acceptere eller afvise alle cookies. ",ButtonText:"Acceptere cookies!",LinkText:"Læs mere",Location:"#",Time:"5",}) </script>
+</body>
+</html>

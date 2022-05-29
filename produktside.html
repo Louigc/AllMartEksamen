@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AllMart forhandler billige og unikke produkter samt gadgets">
+    <meta name="keywords" content="Billig, gadgets, inspiation, personlig, unikke, sjov, produkter">
+    <meta name="author" content="Louise Christiansen, Stine Kleis">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Rajdhani:wght@300;400&family=Staatliches&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <script defer src="script.js"></script>
+    <title>AllMarts BeautyLock</title>
+</head>
+<body>
+   <!-- Vores header -->
+   <header>
+    <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+   
+    <a href="index.html"><img src="images/AllMartLogo.png" alt="AllMarts nye logo" class="logo"></a>
+
+    <nav class="navbar">
+        <a href="nyheder.html">Nyheder</a>
+        <a href="produkter.html">Produkter</a>
+        <a href="inspiration.html">Inspiration</a>
+        <a href="omos.html">Om os</a>
+    </nav>
+
+    <div class="ikoner">
+        <a data-modal-target="#modal" href="#modal" class="fas fa-search"></a>
+        <a href="bruger.html" class="fas fa-user"></a>
+        <a href="indkøbskurv.html" class="fas fa-shopping-cart"></a>
+    </div>
+</header>
+
+<!-- En produkt side -->
+    <div class="small-container single-product">
+        <div class="rows">
+            <div class="col-2">
+                <img src="images/billede1.jpg" alt="AllMarts produkt" id="ProduktImg">
+                <div class="small-img-row">
+
+                    <div class="small-img-col">
+                        <img src="images/billede18.jpg" alt="AllMarts produkt" class="small-img">
+                    </div>
+
+                    <div class="small-img-col">
+                        <img src="images/billede1.jpg" alt="AllMarts produkt" class="small-img">
+                    </div>
+
+                    <div class="small-img-col">
+                        <img src="images/billede7.jpg" alt="AllMarts produkt" class="small-img">
+                    </div>
+
+                    <div class="small-img-col">
+                        <img src="images/billede21.jpg" alt="AllMarts produkt" class="small-img">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Forside > Accessories</p>
+                <h1>BeautyLock</h1>
+                <h4>49,-</h4>
+                <select class="selecter">
+                    <option>Farve</option>
+                    <option>Sølv</option>
+                    <option>Guld</option>
+                </select>
+                <input type="number" value="1">
+                    <a href="#" class="btn">Tilføj til kurv</a>
+                    <h3>Om produktet <a href="#"><i class="fa fa-heart"></i></a></h3>
+                    <br>
+                    <p>Kunne du tænke dig at bære øreringe uden at skulle frygte hængende øreringe, fordi almindelig låse er for gængse og uden støtte, samt giver en slap effekt til dit øre?<br> Så har vi den perfekte løsning til dig!
+                        <br><br>
+                        Skub blot øreringe låsen ind i øreringen bag øret, ligesom de almindelige låse. BeautyLock sidder komfortabelt og sikkert uden at det mærkes på øret. Du får nu muligheden for at kunne bærer de øreringe, du altid har drømt om, men ikke kunne indtil videre på grund af løssiddende låse.
+                        <br><br>
+                        Beautylock kan fåes i sølv og forgyldt. Så de passer lige præcis til din fortrukne farve i smykker. Ved køb af ét par BeautyLock medfølger der 2 stk. dvs. en til hver ørering!
+                    </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+ <!-- Features/ikoner  -->
+ <section class="features">
+    <div class="feature">
+        <img src="images/free-shipping3.png" alt="Hurtig og gratis levering" class="material-symbols-outlined">
+        <span class="featureTitle">GRATIS FRAGT</span>
+        <span class="featureDesc">Gratis levering på ordre over 499,-</span>
+    </div>
+
+    <div class="feature">
+        <img src="images/Return1.png" alt="90 dage returnering" class="material-symbols-outlined">
+        <span class="featureTitle"> 90 DAGE RETUR!</span>
+        <span class="featureDesc">Bliv medlem af vores kundeklub i dag og få 90 returdage!</span>
+    </div>
+
+    <div class="feature">
+        <img src="images/gift-card2.png" alt="Gavekort" class="material-symbols-outlined">
+        <span class="featureTitle">GAVEKORT</span>
+        <span class="featureDesc">Køb simpelt og nemt dit gavekort her!</span>
+    </div>
+
+    <div class="feature">
+        <img src="images/contact-us3.png" alt="Kontakt os" class="material-symbols-outlined">
+        <span class="featureTitle">KONTAKT OS!</span>
+        <span class="featureDesc">Du kan kontakte os på enten email eller telefon!</span>
+    </div>
+</section>
+
+
+    <!-- Andre købte også produkter -->
+
+    <section class="small-container1">
+    <div class="small-container">
+        <h2 class="titel">Andre købte også</h2>
+        <div class="rows">
+            <!-- Produkt 1 -->
+            <div class="col-4">
+                <img src="images/billede13.jpg" alt="AllMarts forslået produkt">
+                <h4>Bivoks</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>99,-</p>
+            </div>
+
+             <!-- Produkt 2 -->
+            <div class="col-4">
+                <img src="images/billede9.jpg" alt="AllMarts forslået produkt">
+                <h4>Multifunktionelt VVS Værktøj</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>139,-</p>
+            </div>
+
+             <!-- Produkt 3 -->
+            <div class="col-4">
+                <img src="images/billede5.jpg" alt="AllMarts forslået produkt">
+                <h4>Multibun</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>99,-</p>
+            </div>
+
+             <!-- Produkt 4 -->
+            <div class="col-4">
+                <img src="images/billede24.jpg" alt="AllMarts forslået produkt">
+                <h4>Magicbun</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>49,-</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+     <!-- Nydhedsbrev/kundeklub -->
+ <section id="newsletter">
+    <div class="newstext">
+        <h4>Tilmeld dig vores kundeklub</h4>
+        <p>Få de nyeste og bedste tilbud på mail, samt <span>10%</span> på din første ordre!</p>
+    </div>
+    <div class="mail">
+        <form name="form1" action="#">
+            <input type='text' name='text1' placeholder="Indtast email"/>
+            <input class="Validate" type="submit" name="submit" value="Tilmeld" onclick="ValidateEmail(document.form1.text1)"/>
+            </form>
+        </div>
+</section>
+
+    <!-- Vores footer -->
+    <section class="footer">
+        <footer class="box-container">
+            <!-- Box 1 i vores footer -->
+            <div class="box">
+                <h3>Hjælp & information</h3>
+                <a href="#">Om os</a>
+                <a href="#">Levering</a>
+                <a href="#">Returnering & reklamation</a>
+                <a href="#">Handelsbetingelser</a>
+                <a href="#">Kontakt os</a>
+            </div>
+
+             <!-- Box 2 i vores footer -->
+            <div class="box">
+                <h3>Kundeservice</h3>
+                <a href="#">Min konto</a>
+                <a href="#">Min ordre</a>
+                <a href="#">Mine gemte favoriter</a>
+            </div>
+
+             <!-- Box 3 i vores footer -->
+            <div class="box">
+                <h3>Følg Allmart</h3>
+                <a href="https://www.facebook.com/AllMart-110988494833826/">Facebook</a>
+                <a href="https://www.instagram.com/allmartdk/?hl=da">Instagram</a>
+                <a href="https://www.tiktok.com/">TikTok</a>
+                <a href="https://dk.trustpilot.com/review/www.allmart.dk">Trustpilot</a>
+            </div>
+
+             <!-- Box 4 i vores footer -->
+            <div class="box">
+                <h3>Kontaktinformation</h3>
+                <a href="#">+45 50 43 45 05</a>
+                <a href="#">kontakt@allmart.dk</a>
+                <a href="#">Jupitervej 10 <br> <br> 7430 Ikast, Danmark</a>
+            </div>
+        </footer>
+            <div class="credit">Copyright © 2022, ejet af <span>Ecom Pioneers ApS</span>, CVR: 42761729 </div>
+            <img src="images/betalingsLogo.png" class="betaling" alt="Betalings muligheder">
+    </section>
+
+    <!-- Vores pop up samt søgebar -->
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Søg på produkter</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body"> 
+            <br>
+            <form id="form"> 
+            <input type="search" id="query" name="q" placeholder="Søg på produkter, mærker og kategorier...">
+            <button class="fas fa-search"></button>
+          </form>
+          <br>
+          <br>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+<!-- Vores Cookie pop up -->
+    <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
+    <script> window.start.init({Palette:"palette6",Mode:"banner bottom",Theme:"classic",Message:"Allmart.dk anvender cookies, herunder også tredjepartscookies, for at give dig en bedre brugeroplevelse. Her kan du acceptere eller afvise alle cookies. ",ButtonText:"Acceptere cookies!",LinkText:"Læs mere",Location:"#",Time:"5",}) </script>
+</body>
+</html>

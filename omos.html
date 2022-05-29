@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AllMart forhandler billige og unikke produkter samt gadgets">
+    <meta name="keywords" content="Billig, gadgets, inspiation, personlig, unikke, sjov, produkter">
+    <meta name="author" content="Louise Christiansen, Stine Kleis">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Rajdhani:wght@300;400&family=Staatliches&display=swap" rel="stylesheet"> 
+    <script defer src="script.js"></script>
+    <title>Om os og vores koncept │ Vi ønsker at skabe en forskel</title>
+</head>
+<body>
+  <!-- Vores header -->
+  <header>
+    <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+   
+        <a href="index.html"><img src="images/AllMartLogo.png" alt="AllMarts nye logo" class="logo"></a>
+
+        <nav class="navbar">
+        <a href="nyheder.html">Nyheder</a>
+        <a href="produkter.html">Produkter</a>
+        <a href="inspiration.html">Inspiration</a>
+        <a href="omos.html">Om os</a>
+        </nav>
+
+        <div class="ikoner">
+        <a data-modal-target="#modal" href="#modal" class="fas fa-search"></a>
+        <a href="bruger.html" class="fas fa-user"></a>
+        <a href="indkøbskurv.html" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+
+<main class="omos">
+    <section class="row">
+        <div class="om-col">
+            <img src="images/SivogOliver.jpg" alt="Oliver & Siv som ejer AllMart">
+        </div>
+
+        <div class="om-col">
+                <h1 class="heading">Hvem er vi?</h1>
+                <h5 class="text">En sand historie om <span>Allmart</span></h5>
+                <p>Allmart blev etableret i start 2022 af Oliver og Sivananthi.<br> Ideén opstod omkring at løse så mange forskellige kundebehov som muligt og starede faktisk i parrets stue. Allmart voskede hurtigere end de havde forventet, og måtte derfor finde sig et lager hurtigst muligt, da der ikke længere var mere plads i den lille stue.<br>        
+                </p>
+            </div>
+    </section>
+
+    <section class="row">
+        <div class="om-col">
+                <p>Deres idé blev realiseret ved at bygge en forretning hvor kunderne har adgang til en masse produkter der løser bevidste samt ubevidste behov. 
+                Vi bruger meget tid på at lytte på kunders behov og finde produkter der netop løser disse behov. Vi vil gerne give vores kunder en god oplevelse hos os, derfor har vi altid fokus på at levere den bedste leveringstid, kundeservice og det bedste sortiment. Derudover bruger vi meget tid på at gøre vores hjemmeside så brugervenlig som muligt, så ingen får problemer med at bestille produkter fra os.
+                </p>
+            </div>
+            <div class="om-col">
+                <img src="images/Lageret.jpg" alt="Allmarts lager, hvor Siv og Oliver pakker">
+            </div>
+    </section>
+
+    <!-- Sociale medier sektion -->
+
+    <div class="socialemedier">
+            <h1 class="heading">Følg med på vores rejse!</h1>
+            <h3>Vores iværksætter rejse er først lige begyndt. Du kan følge vores rejse og hvad vi går og laver på vores sociale medier, som du finder nedenfor. <br> Følg med!</h3>
+                <h4>#AllMart</h4>
+            <div class="row">
+                <!-- Facebook -->  
+                <div class="social-col">
+                    <h3>Facebook</h3>
+                    <a href="https://www.facebook.com/AllMart-110988494833826/"><i class="fab fa-facebook"></i></a>
+                    <p>Følg os på Facebook og hold dig opdateret</p>
+                </div>
+                <!-- Instagram -->  
+                <div class="social-col">
+                    <h3>Instagram</h3>
+                    <a href="https://www.instagram.com/allmartdk/"><i class="fab fa-instagram"></i></a>
+                    <p>Følg os på Instagram og hold dig opdateret</p>
+                </div>
+                <!-- TikTok -->  
+                <div class="social-col">
+                    <h3>TikTok</h3>
+                    <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a>
+                    <p>Følg os på TikTok og hold dig opdateret</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+     <!-- Features/ikoner  -->
+     <section class="features">
+        <div class="feature">
+            <img src="images/free-shipping3.png" alt="Hurtig og gratis levering" class="material-symbols-outlined">
+            <span class="featureTitle">GRATIS FRAGT</span>
+            <span class="featureDesc">Gratis levering på ordre over 499,-</span>
+        </div>
+
+        <div class="feature">
+            <img src="images/Return1.png" alt="90 dage returnering" class="material-symbols-outlined">
+            <span class="featureTitle"> 90 DAGE RETUR!</span>
+            <span class="featureDesc">Bliv medlem af vores kundeklub i dag og få 90 returdage!</span>
+        </div>
+
+        <div class="feature">
+            <img src="images/gift-card2.png" alt="Gavekort" class="material-symbols-outlined">
+            <span class="featureTitle">GAVEKORT</span>
+            <span class="featureDesc">Køb simpelt og nemt dit gavekort her!</span>
+        </div>
+
+        <div class="feature">
+            <img src="images/contact-us3.png" alt="Kontakt os" class="material-symbols-outlined">
+            <span class="featureTitle">KONTAKT OS!</span>
+            <span class="featureDesc">Du kan kontakte os på enten email eller telefon!</span>
+        </div>
+    </section>
+
+    <br><br>
+
+    <section class="socialemedier">
+        <h1 class="vaerdier">AllMarts værdigrundlag</h1>
+        <div class="row">
+            <!-- Facebook -->  
+            <div class="social-col">
+                <img src="images/mission.png"  alt="AllMarts Mission" class="ikonimg">
+                <h3>Mission</h3>
+                <p>Vores mission er meget simpel: Vi ønsker at gøre Jeres hverdag en tand federe med problemløsende, spændende og nye produkter.</p>
+            </div>
+            <!-- Instagram -->  
+            <div class="social-col">
+                <br><br>
+                <img src="images/Vission.png" alt="AllMarts Vission" class="ikonimg">
+                <h3>Vission</h3>
+                <p>Vi sigter efter at blive Danmarks fortrukkende og billigste online-leverandør, som vi vil gøre ved hjælp af medarbejdere, samarbejdspartnere samt forbrugere.<br></p>
+            </div>
+            <!-- TikTok -->  
+            <div class="social-col">
+                <img src="images/Værdier.png" alt="AllMarts Værdier" class="ikonimg">
+                <h3>Værdier</h3>
+                <p>Vores fælles værdier hos AllMart er at være ærlige, passioneret og ambitiøs. Værdierne udtrykker det, vi er, det, vi står for, og måden, vi gør tingene på.
+                </p>
+            </div>
+            <!-- Værdi 1 -->
+            <div class="socail-col">
+                <p class="tekst">Ærlighed</p>
+            </div>
+
+            <!-- Værdi 2 -->
+            <div class="socail-col">
+                <p class="tekst">Respekt</p>
+            </div>
+
+            <!-- Værdi 3 -->
+            <div class="socail-col">
+                <p class="tekst">Integritet</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- OFTE STILLEDE SPØRGSMÅL Sektion -->
+    <article>  
+        <h2 class="titel">Ofte stillede spørgsmål</h2>
+
+         <!-- 1 spørgsmål -->
+         <div class="faq">
+            <div class="spørgsmål">
+                <h3>Hvordan fungerer AllMarts kundeklub?</h3>
+
+                <!-- Vores pil -->
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+                </svg>
+            </div>
+            <div class="svar">
+                <p>Vi sætter stor ære i at levere produkter til vores kunder der gør hverdagen lettere og federe. Vores kundeklub er med til at gøre det lettere for dig som kunde at handle de nyeste produkter. 
+                    Som medlem af vores kundeklub kan vi tilbyde dig en masse fordele, som blandt andet er følgende: <br>
+                    90 dage returret<br>
+                    Adgang til særlige VIP tilbud<br>
+                    10% rabat på din første ordre<br>
+                    Hvis du bliver medlem af vores kundeklub, får du altså ikke bare store fordele ved dit næste køb. Du kommer også med på en spændende rejse på tæt hold. Vi kommer til at udbyde LANGT flere fede produkter, lave livestreams med unikke tilbud, lave superfede konkurrencer og virkelig mange flere fede tiltag der giver vores kunder fede fordele.
+                    Du kan tilmelde dig vores kundeklub <a href="#newsletter">her</a>! 
+                </p>
+            </div>
+        </div>
+
+        <!-- 2 spørgsmål -->
+        <div class="faq">
+            <div class="spørgsmål">
+                <h3>Hvordan kan I være så billige?</h3>
+
+                <!-- Vores pil -->
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+                </svg>
+            </div>
+            <div class="svar">
+                <p>Vi køber alle produkter direkte af vores europæiske leverandører, og opbevarer dem på vores eget lille lager. På den måde, så undgår vi fordyrende mellemled, som typisk tillægger produkterne et ekstra højt gebyr. 
+                    Derudover så skaber vores indkøbere unikke aftaler med de største distributører i EU, og ved hjælp af deres forhandlinger samt indkøb af ekstra store varepartier, kan AllMart presse priserne så langt ned som muligt og tilbude Jer disse fantastiske priser!</p>
+            </div>
+        </div>
+
+         <!-- 3 spørgsmål -->
+         <div class="faq">
+            <div class="spørgsmål">
+                <h3>Kommer de udsolgte varer på lager igen?</h3>
+
+                <!-- Vores pil -->
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+                </svg>
+            </div>
+            <div class="svar">
+                <p>Vi modtager hele tiden udsolgte varer, som skal på lager igen. Men for at sikre vores kunder den bedste pris på markedet, så køber vi kun de udsolgte produkter ind igen, hvis vi kan garantere at kunne sælge dem igen til samme lave pris. 
+                    Dog kan man i nogle tilfølde godt forvente, at der kan få uger/måneder før det udsolgte produkt er tilbage på lager. 
+                    Du kan indtaste din mail under det udsolgte produkt og få tilsendt en besked så snart produktet er på lager igen.</p>
+            </div>
+        </div>
+
+         <!-- 4 spørgsmål -->
+         <div class="faq">
+            <div class="spørgsmål">
+                <h3>Hvordan returnerer jeg min ordre?</h3>
+
+                <!-- Vores pil -->
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+                </svg>
+            </div>
+            <div class="svar">
+                <p>Ønsker du at returnere et produkt, skal du blot sende det til følgende adresse: <br><br>
+
+                    AllMart.dk<br>
+                    Jupitervej 10<br>
+                    7430 Ikast<br><br>
+                    
+                    Du skal vedlægge dit navn, mail og ordrenummer i pakken.
+                    Når vi modtager din pakke, kigger vi på sagen. Du kan også læse mere om returnering nederst på siden under punktet: Betingelser.    
+                </p>
+            </div>
+        </div>
+
+        <!-- 5 spørgsmål -->
+        <div class="faq">
+            <div class="spørgsmål">
+                <h3>Er det muligt at afhente varerne på jeres adresse?</h3>
+
+                <!-- Vores pil -->
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+                </svg>
+            </div>
+            <div class="svar">
+                <p> Det er desværre ikke en mulighed, at komme og afhente varer på vores adresse, da vi ikke har kontor og lager på samme sted. Derfor kan varerne på AllMart.dk kun bestilles over nettet, hvorefter de vil leveret til den valgte adresse med GLS. </p>
+            </div>
+        </div>
+
+        <!-- 6 spørgsmål -->
+        <div class="faq">
+            <div class="spørgsmål">
+                <h3>Er produkterne ægte?</h3>
+
+                <!-- Vores pil -->
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+                </svg>
+            </div>
+            <div class="svar">
+                <p> Alle vores produkter kommer direkte fra de største leverandører og kvalitetstjekkes inden de sendes hjem til dig. Vi kan derfor give dig 100% garanti for ægthed på alle mærkevarer.
+                    Skulle et produkt alligevel ikke leve op til dine forventninger, giver vi dig selvfølgelig 30 dages returret og 90 dage hvis du er medlem af vores kundeklub – uden forbehold!
+                </p>
+            </div>
+        </div>
+
+         <!-- 7 spørgsmål -->
+         <div class="faq">
+            <div class="spørgsmål">
+                <h3>Hvor langt er min ordre?</h3>
+
+                <!-- Vores pil -->
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+                </svg>
+            </div>
+            <div class="svar">
+                <p> Du vil automastisk modtage en mail fra GLS når din pakke er klar til afhentning. Har du indtastet dit mobilnummer under bestilling, vil du også modtage en SMS.
+                    I din afsendelsesbekræftelse fra AllMart kan du se dit forsendelsesnummer eller Track & Trace nummer.
+                </p>
+            </div>
+        </div>
+
+         <!-- 8 spørgsmål -->
+         <div class="faq">
+            <div class="spørgsmål">
+                <h3>Jeg har problemer med at gennemføre min ordre.</h3>
+
+                <!-- Vores pil -->
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+                </svg>
+            </div>
+            <div class="svar">
+                <p> Vi beklager meget hvis du oplever problemer med at gennemføre din ordre.<br>
+                    Hvis du prøver at bestille fra en mobiltelefon eller tablet, kan det sommetider hjælpe at skifte over til en computer eller en anden enhed.
+                    Oplever du fortsat problemer, er du velkommen til at skrive eller ringe til os på mailen: kontakt@allmart.dk, så kan vi sammen løse problemet.  
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Kontakt os sektion -->
+    <section class="kundeservice">
+        <h1 class="heading">ÅBNINGSTIDER FOR KUNDESERVICE</h1>
+        <div class="række"><p class="text">Hvis du skulle have nogen som helst yderligere spørgsmål, må du endelig ikke tøve med at kontakte os!</p></div>
+        <h3 class="header">Mandag - Fredag:</h3>
+        <p class="text">8 - 16</p>
+        <h3 class="header">Weekender</h3>
+        <p class="text">Lukket</p>
+
+        <hr class="hr">
+
+        <h1 class="heading">Kontakt</h1>
+        <h3 class="text">Du kan live chat med kunderservice!</h3>
+        <div class="række"><a href="#" class="btn">Åben chat</a></div>
+        <h3 class="text">Eller du kan kontakte os på følgende</h3>
+
+        <div class="række">
+            <div class="social-col">
+            <h3 class="header">Telefon nummer:</h3>
+            <a href="tel:004550434505" class="information">+45 50 43 45 05</a>
+            </div>
+
+            <div class="social-col">
+            <h3 class="header">Mail:</h3>
+            <a href="mailto:kontakt@allmart.dk" class="information"> kontakt@allmart.dk </a>
+            </div>
+        </div>
+        <div class="række">
+        <p class="text">Vi forsøger at besvare Jeres mails hurtigst muligt, men forvent gerne 1-2 hverdage - vi har i øjeblikket mange henvendelser!</p>
+        </div>
+    </section>
+
+<!-- Nydhedsbrev/kundeklub -->
+<section id="newsletter">
+    <div class="newstext">
+        <h4>Tilmeld dig vores kundeklub</h4>
+        <p>Få de nyeste og bedste tilbud på mail, samt <span>10%</span> på din første ordre!</p>
+    </div>
+    <div class="mail">
+        <form name="form1" action="#">
+            <input type='text' name='text1' placeholder="Indtast email"/>
+            <input class="Validate" type="submit" name="submit" value="Tilmeld" onclick="ValidateEmail(document.form1.text1)"/>
+            </form>
+        </div>
+</section>
+
+    <!-- Vores footer -->
+    <section class="footer">
+        <footer class="box-container">
+            <!-- Box 1 i vores footer -->
+            <div class="box">
+                <h3>Hjælp & information</h3>
+                <a href="#">Om os</a>
+                <a href="#">Levering</a>
+                <a href="#">Returnering & reklamation</a>
+                <a href="#">Handelsbetingelser</a>
+                <a href="#">Kontakt os</a>
+            </div>
+
+             <!-- Box 2 i vores footer -->
+            <div class="box">
+                <h3>Kundeservice</h3>
+                <a href="#">Min konto</a>
+                <a href="#">Min ordre</a>
+                <a href="#">Mine gemte favoriter</a>
+            </div>
+
+             <!-- Box 3 i vores footer -->
+            <div class="box">
+                <h3>Følg Allmart</h3>
+                <a href="https://www.facebook.com/AllMart-110988494833826/">Facebook</a>
+                <a href="https://www.instagram.com/allmartdk/?hl=da">Instagram</a>
+                <a href="https://www.tiktok.com/">TikTok</a>
+                <a href="https://dk.trustpilot.com/review/www.allmart.dk">Trustpilot</a>
+            </div>
+
+             <!-- Box 4 i vores footer -->
+            <div class="box">
+                <h3>Kontaktinformation</h3>
+                <a href="#">+45 50 43 45 05</a>
+                <a href="#">kontakt@allmart.dk</a>
+                <a href="#">Jupitervej 10 <br> <br> 7430 Ikast, Danmark</a>
+            </div>
+        </footer>
+            <div class="credit">Copyright © 2022, ejet af <span>Ecom Pioneers ApS</span>, CVR: 42761729 </div>
+            <img src="images/betalingsLogo.png" class="betaling" alt="Betalings muligheder">
+    </section>
+
+    <!-- Vores pop up samt søgebar -->
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Søg på produkter</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body"> 
+            <br>
+            <br>
+            <form id="form"> 
+            <input type="search" id="query" name="q" placeholder="Søg på produkter, mærker og kategorier...">
+            <button class="fas fa-search"></button>
+          </form>
+          <br>
+          <br>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+<!-- Vores Cookie pop up -->
+    <script type="text/javascript" src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
+    <script> window.start.init({Palette:"palette6",Mode:"banner bottom",Theme:"classic",Message:"Allmart.dk anvender cookies, herunder også tredjepartscookies, for at give dig en bedre brugeroplevelse. Her kan du acceptere eller afvise alle cookies. ",ButtonText:"Acceptere cookies!",LinkText:"Læs mere",Location:"#",Time:"5",}) </script>
+</body>
+</html>

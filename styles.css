@@ -1,0 +1,1570 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family:'Staatliches', cursive;;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+
+/* Her styler vi vores navigations bar øverst på siden */
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: #fff;
+    padding:0.1rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    width: 100px;
+    height: 100px;
+}
+
+header .logo:hover{
+    width: 105px;
+    height: 105px;
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color: #666;
+    justify-content: space-around;
+    text-align: center;
+}
+
+header .navbar a:hover{
+    color: rgb(255, 217, 0);
+}
+
+header .ikoner a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .ikoner a:hover{
+    color: rgb(255, 217, 0);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+
+/* Her styler vi vores øverste content på forsiden */
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("images/farsdag.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 8rem;
+    color: rgba(0, 0, 0, 0.881);
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color: #A2C9FF;
+    padding: 1rem 0;
+    line-height: 1.2;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    padding: 1rem 0;
+    line-height: 1.5;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.kundeklubsektion img{
+    width: 100%;
+}
+
+/* Her styler vi vores knap */
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: #A2C9FF;
+}
+
+/* Her styler vi vores ikoner */
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+   background-color: #acdfff50;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.material-symbols-outlined{
+   width: 25%;
+   height: 25%;
+}
+
+
+.featureTitle{
+    font-size: 28px;
+    font-weight: 600;
+    margin: 20px;
+    color: rgb(255, 217, 0);
+}
+
+.featureDesc{
+    color: #333;
+    width: 50%;
+    height: 100px;
+    font-size: 17px;
+}
+
+/* Styling af vores pop up boks, som viser vores søge bar når der trykker på søge ikonet */
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 2.5rem;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* Styling af vores søgebar */
+
+  #form {
+    background-color: rgb(227, 227, 227);
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  input {
+    all: unset;
+    font: 16px system-ui;
+    color: #666;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    font-size: large;
+  }
+
+  /* Styling af vores nyeste produkter sektion */
+
+  .heading{
+      text-align: center;
+      font-size: 4.5rem;
+      color: #333;
+      margin: 2rem 0;
+  }
+
+  .heading span{
+    color:  #A2C9FF;
+  }
+
+  .products .box-container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+  }
+  
+  .products .box-container .box{
+      flex: 1 1 30rem;
+      box-shadow: 0 .5rem 1.5rem rgba(105, 105, 105, 0.185);
+      border-radius: .5rem;
+      position: relative;
+  }
+
+  .products .box-container .box .discount{
+      position: absolute;
+      text-align: center;
+      top: 1rem; left: 1rem;
+      padding: 1.5rem 1rem;
+      font-size: 1.9rem;
+      color: rgb(0, 0, 0);
+      background-color: rgba(255, 239, 157, 0.8);
+      z-index: 1;
+      border-radius: .5rem;
+  }
+
+  .products .box-container .box .image{
+      position: relative;
+      text-align: center;
+      padding-top: 2rem; 
+      overflow: hidden;
+  }
+
+  .products .box-container .box .image img{
+      height: 25rem;
+  }
+
+  .products .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.products .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem; left: 0; right: 0;
+    display: flex;
+}
+
+.products .box-container .box:hover .image .icons{
+    bottom: 0;
+}
+
+.products .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background-color: rgba(90, 192, 255, 0.716);
+    color: #fff;
+}
+
+.products .box-container .box .image .icons a:hover{
+    background: rgb(255, 217, 0);
+}
+
+.products .box-container .box .image .icons .cart-btn{
+    border-left: .1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width: 100%;
+}
+
+.products .box-container .box .content{
+    padding: 1rem;
+    text-align: center;
+}
+
+.products .box-container .box .content h3{
+    font-size: 2rem;
+    color: #333;
+}
+
+.products .box-container .box .content .price{
+    font-size: 2rem;
+    color: grey;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.products .btn {
+    padding:1em;
+    width: 10%;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none !important;
+    margin:0 auto;
+}
+
+.containerbtn{
+  width: 100%;
+  text-align: center;
+  padding-top: 2%;
+}
+
+/* Styling af vores anmeldelser */
+
+.heading .fa-heart{
+    color: pink;
+}
+
+.review{
+    background: rgb(255,238,157);
+    background: linear-gradient(0deg, rgba(255,238,157,1) 0%, rgba(172,223,255,0.3463979341736695) 100%);
+}
+
+.box{
+    background-color: white;
+}
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgb(0,0,0,.1);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: .1rem solid rgb(0,0,0,.1);
+}
+
+.review .box-container .box .fa-quote-right{
+    position: absolute;
+    bottom: 3rem; right: 3rem;
+    font-size: 6rem;
+    color: #eee;
+}
+
+.review .box-container .box .stars i{
+    color: rgb(255, 221, 49);
+    font-size: 2rem;
+
+}
+
+.review .box-container .box p{
+    color: #999;
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+    font-family: 'Bad Script', cursive;
+}
+
+.review .box-container .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review .box-container .box .user h3{
+    font-size: 2rem;
+    color: #333;
+}
+
+.review .box-container .box .user span{
+    font-size: 1.5rem;
+    color: #999;
+}
+
+.trustpilot {
+    width: 13%;
+    height: 13%;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Stylling af vores nyhed side */
+
+.newproducts{
+    display: flex;
+    align-items: center;
+    min-height: 40vh;
+    background: rgb(255,238,157);
+    background: linear-gradient(0deg, rgba(172,223,255,0.3463979341736695) 0%, rgba(255,238,157,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.newproducts .box-container .heading{
+    max-width: 50rem;
+    font-size: 6rem;
+    line-height: 1.2;
+    padding: 0 0;
+    padding-top: 120px;
+}
+
+.newproducts .box-container p{
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+    font-family: 'Bad Script', cursive;
+}
+
+#newproducts a{
+    text-decoration: none;
+    color: #ffd900;
+}
+
+/* Styling af vores produkt side */
+
+.some-product{
+    display: flex;
+    align-items: center;
+    min-height: 40vh;
+    background: rgb(255,238,157);
+    background: linear-gradient(0deg, rgba(172,223,255,0.3463979341736695) 0%, rgba(255,238,157,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.some-product .box-container .heading{
+    max-width: 50rem;
+    font-size: 6rem;
+    line-height: 1.2;
+    padding: 0 0;
+    padding-top: 120px;
+}
+
+.some-product .box-container p{
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+    font-family: 'Bad Script', cursive;
+}
+
+/* Styling af dropdown liste */
+
+.sorterform form{
+    display: block;
+    background-color: #fff;
+    width: auto;
+    float: right;
+    padding-top: 15px;
+    padding-right: 135px;
+}
+
+.sorterform h5{
+    font-size: large;
+    color: #333;
+}
+
+select {
+    padding: 6px 6px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+#some-product a {
+    text-decoration: none;
+    color: #ffd900;;
+}
+
+  /* Styling af vores inspiration side */
+  
+  .wrapper .heading{
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .wrapper-tekst{
+      text-align: center;
+      color: rgb(255, 221, 49);
+      font-size: 33px;
+      padding-bottom: 50px;
+      font-weight: bold;
+  }
+
+ .img-area{
+     display: flex;
+     height: 100%;
+     flex-wrap: wrap;
+     align-content: flex-start;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .single-img{
+     max-width: 350px;
+     margin: auto;
+ }
+ .single-img img{
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    padding: 5px;
+ }
+
+ .single-img h3{
+     font-size: 22px;
+     text-align: center;
+     color: #333;
+ }
+
+ .single-img:hover{
+     opacity: .8;
+     transition: .9s;
+ }
+
+ .single-img p{
+     font-size: 14px;
+     font-family: 'Rajdhani', sans-serif;;
+     color: #666;
+     text-align: center;
+ }
+
+/* Styling af vores footer */
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3{
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display:block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color: rgb(255, 217, 0);
+    text-decoration: underline;
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 1.8rem;
+    color: #333;
+    border-top: 0.3rem solid rgba(0,0,0,.1);
+}
+
+.footer .credit span{
+    color: rgb(255, 217, 0);
+}
+
+.betaling{
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+/* Nyhedsbrev/kundeklub signup */
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #ffee9d;
+    padding: 40px 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#newsletter h4{
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+}
+
+#newsletter p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #666;
+}
+
+#newsletter p span{
+    color: #A2C9FF;
+    font-weight: bold;
+}
+
+#newsletter .mail{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    height: 4.3rem;
+    padding: 0px 1.25em;
+    font-size: 18px;
+    width: auto;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    background-color: #fff;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter input[type=submit] {
+    font-size: 18px;
+    font-weight: 600; 
+    width: auto;
+    padding: 0.5px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    background-color: #A2C9FF;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-align: center;
+}
+
+#newsletter input[type=submit]:hover{
+    background-color: #8ebcfc;
+}
+
+#newsletter input{
+    color: #666;
+}
+
+/* Styling af Om Os siden */
+
+.omos{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .row{
+    display: flex;
+    justify-content: space-between;
+}   
+
+.om-col{
+    flex-basis: 48%;
+  }
+  
+.om-col img{
+    width: 100%;
+    height: auto;
+  }
+  
+.om-col p{
+    padding: 15px 0 25px;
+    font-family: 'Rajdhani', sans-serif;
+    color: #666;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+
+.om-col .heading{
+    color: #333;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.om-col h5{
+    color: #333;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.om-col h5 span{
+    color: #ffd900;
+}
+
+/* Styling af sociale medier på om os siden */
+
+.omos{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+.socialemedier{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .socialemedier h1{
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 10px;
+
+  }
+  
+  .socialemedier h4{
+    font-size: 35px;
+    padding-bottom: 20px;
+    color: #ffd900;
+  }
+
+  .socialemedier h3{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    color: #666;
+  }
+  div .row .social-col{
+    flex-basis: 31%;
+    background: hsla(0, 0%, 74%, 0.151);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 40px 5px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    }
+  
+  .social-col h3{
+      font-size: 22px;
+      font-weight: bolder;
+      color: #333;
+      font-family: 'Staatliches', cursive;
+    }
+  
+  .social-col p{
+      font-size: 20px;
+      font-family: 'Rajdhani', sans-serif;
+      padding-top: 5px;
+    }
+  
+    div .row .social-col:hover{
+    box-shadow: 0 0 20px 0px #A2C9FF;
+  }
+  
+  .social-col i:hover{
+    color: #ffd900;
+  }
+  
+  .social-col i{
+    font-size: 55px;
+    text-decoration: none;
+    box-shadow: none;
+    color: #A2C9FF;
+  }
+
+  .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  section .row{
+    flex-basis: 31%;
+    background: hsla(0, 0%, 74%, 0.151);
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    justify-content: center;
+    }
+
+    section .row .social-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 40px 5px;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    }
+
+    .ikonimg{
+    width: 40%;
+    }
+    
+    .tekst{
+    font-size: 30px;
+    justify-content: space-around;
+    flex-basis: 31%;
+    border-radius: 10px;
+    padding: 0px 99px;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    color: #ffd900;
+    padding-bottom: 30px;
+    font-family: 'Bad Script', cursive;
+    }
+
+    .tekst:hover{
+        font-size: 35px;
+    }
+
+    .vaerdier{
+    background: hsla(0, 0%, 74%, 0.151);
+    padding-top: 35px;
+    color: #333;
+    }
+
+    /* Styling af vores ofte stillede spørgsmål */
+
+    article{
+    min-height: 85vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .titel{
+    padding-top: 30px;
+    font-size: 4rem;
+    margin: 2rem 0rem;
+    color: #333;
+    }
+
+    .faq{
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #666;
+    cursor: pointer;
+    }
+
+    .spørgsmål{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .spørgsmål h3:hover{
+        font-size: 2.2rem;
+    }
+
+    .spørgsmål h3{
+    font-size: 2rem;
+    color: #333;
+    }
+
+    .svar{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+    }
+
+    .svar p{
+    font-family: 'Rajdhani', sans-serif;
+    color: #333;
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.7rem;
+    }
+
+    .svar a{
+    color: #A2C9FF;
+    }
+
+
+    .faq.active .svar{
+     max-height: 300px;
+    }
+
+    .faq.active svg{
+    transform: rotate(180deg);
+    }
+
+    svg{
+    transition: transform 0.5s ease-in;
+    }
+
+    /* Styling af kontakt os på om os siden */
+
+    .kundeservice{
+    background: rgb(255,238,157);
+    background: linear-gradient(0deg, rgba(255,238,157,1) 0%, rgba(172,223,255,0.3463979341736695) 100%);
+    padding-top: 40px;
+    }
+
+    .kundeservice .heading {
+        text-decoration: 2.5px underline;
+        font-size: 4rem;
+    }
+
+    .header{
+    text-align: center;
+    font-size: 3.5rem;
+    color: #333;
+    margin: 2rem 0;
+    }
+
+    .text{
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin: 2rem 0;
+    }
+    
+    .hr{
+    border-top: 0.1px solid #333;
+    width: 50%;
+    margin: auto;
+    }
+
+    .række{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+
+    section .række{
+    flex-basis: 31%;
+    box-sizing: border-box;
+    justify-content: center;
+    }
+    
+    section .række .social-col{
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    }
+
+    .information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #A2C9FF;
+    font-size: 2.3rem;
+    }
+
+    .række .btn{
+    background-color: #A2C9FF;
+    }
+
+    .række .btn:hover{
+    background-color: #8ebcfc;
+    }
+
+    .række .text{
+    font-size: 2.2rem;
+    font-family: 'Rajdhani', sans-serif;
+    }
+
+    /* Styling af vores produkt side */
+
+    .small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 60px;
+    }
+
+    .small-container1{
+    background: rgb(255,238,157);
+    background: linear-gradient(0deg, rgba(255,238,157,1) 0%, rgba(172,223,255,0.3463979341736695) 100%);
+    }
+
+    .single-product{
+    margin-top: 80px;
+    }
+
+    .col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    }
+
+    .col-2 h3{
+    padding-top: 20px;
+    font-size: 25px;
+    color: #333;
+    }
+
+    .col-2 p{
+    font-size: 18px;
+    font-family: 'Rajdhani', sans-serif;
+    }
+
+    .single-product .col-2 img{
+    padding: 0;
+    }
+
+    .single-product .col-2{
+    padding: 20px;
+    }
+
+    .single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    }
+
+    .selecter{
+    border: 1px solid #acdfff;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100px;
+    border-radius: 10px;
+    }
+
+    .selecter:focus{
+    outline: none;
+    }
+    .single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    }
+
+    .single-product input{
+    width: 30px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+    border: 1px solid #acdfff;
+    border-radius: 10px;
+    }
+
+    .col-2 .fa{
+    color: pink;
+    }
+
+    input:focus{
+    outline: none;
+    }
+
+    .small-img-row{
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+    }
+
+    .rows{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+
+    .col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    }
+
+    .col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    }
+
+    .col-2 h4{
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 800;
+    }
+
+    .col-2 .btn{
+    background-color: #acdfff;
+    }
+
+    .col-2 .btn:hover{
+    background-color: #ffee9d;
+    color: #666;
+    }
+
+    .col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    }
+
+    .col-4 img{
+    width: 100%;
+    }
+
+    .col-4 h4{
+    color: #333;
+    font-weight: normal;
+    font-size: 20px;
+    }
+
+    .col-4 p{
+    font-size: 18px;
+    color: #333;
+    }
+    
+    .rating .fa{
+    color: #ffd900;
+    }
+
+    .col-4:hover{
+    transform: translateY(-5px);
+    }
+
+
+    /* Styling af vores indkøbskurvs side */
+
+    .kurv-side{
+    margin: 80px auto;
+    }
+
+    table{
+    width: 100%;
+    border-collapse: collapse;
+    }
+
+    .kurv-info{
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .kurv-info p{
+    font-size: 17px;
+    color: #333;
+    }
+
+    .kurv-info small{
+    font-size: 14px;
+    color: #333;
+    }
+
+    th{
+    text-align: left;
+    padding: 5px;
+    color: #333;
+    background-color: #ffee9d;
+    font-weight: normal;
+    font-size: large;
+    }
+
+    td{
+    padding: 10px 5px;
+    font-size: 16px;
+    }
+
+    td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    }
+
+    td a{
+    color: #ffd900;
+    font-size: 12px;
+    }
+
+    td img{
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    }
+
+    .total-pris{
+    display: flex;
+    justify-content: flex-end;
+    }
+
+    .total-pris table{
+    border-top: 3px solid #ffee9d;
+    width: 100%;
+    max-width: 350px;
+    }
+
+    td:last-child{
+    text-align: right;
+    }
+
+    th:last-child{
+    text-align: right;
+    }
+
+    .total{
+    text-decoration: underline;
+    font-size: 18px;
+    }
+
+    .kurv-side span{
+    color: #ffd900;
+    }
+
+    .kurv-side .fa{
+    font-size: 35px;
+    }
+
+    .betaling-btn{
+    display: inline-block;
+    background-color: #ffd900;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    width: auto;
+    font-size: large;
+    margin: 0;
+    top: 60%;
+    -ms-transform: translateY(-120%);
+    transform: translateY(-120%);
+    }
+
+    /* Styling af bruger siden */
+
+    .container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    }
+
+    .account-side{
+    padding: 50px 0;
+    background: rgb(255,238,157);
+    background: linear-gradient(0deg, rgba(255,238,157,1) 0%, rgba(172,223,255,0.3463979341736695) 100%);
+    }
+
+    .form-container{
+    background: #eee;
+    width: 310px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    }
+
+    .form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #ffd900;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+    font-size: 16px;
+    }
+
+    .form-btn{
+    display: inline-block;
+    }
+
+    .form-container form{
+    max-width: 320px;
+    padding: 0 20px;
+    position: absolute;
+    top: 70px;
+    transition: transform 1s;
+    }
+
+    .form-container form input{
+    width: 210px;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #333;
+    }
+
+    .form-container .btn{
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 10px 0;
+    border-radius: 30px;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    background-color: #8ebcfc;
+    }
+
+    .form .btn:focus{
+    outline: none;
+    }
+
+    #LogindForm{
+    left: -300px;
+    }
+
+    #OpretForm{
+    left: 0;
+    }
+
+    form a{
+    font-size: 12px;
+    text-decoration: underline;
+    color: #333;
+    }
+
+    #Indikator{
+    width: 100px;
+    border:none;
+    background: #8ebcfc;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+    }
+
+
+    /* Styling af vores Error page */
+    .errorpage img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height: 100vh;
+    padding-top: 100px;
+    }
+
+
+/* Mobile first princippet til vores brugermenu - Media queries*/
+@media (max-width:991px) {
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+
+    .features{
+        flex-direction: column;
+    }
+
+    .row{
+        flex-direction: column;
+      }
+    .om-col .heading {
+        font-size: 35px;
+      }
+
+    .om-col img{
+        width: 100%;
+    }
+
+    #newsletter{
+        flex-direction: column;
+    }
+
+    .mail {
+        padding-top: 40px;
+        width: auto;
+    }
+
+    #newsletter button{
+        width: auto;
+        height: auto;
+        font-size: 12.5px;
+        text-align: center;
+    }
+
+    #newsletter input{
+        width: 70px;
+    }
+
+    .products .btn {
+        width: auto;
+    }
+
+    .kurv-info p{
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+
+   header .fa-bars{
+       display: block;
+   }
+
+   header .navbar{
+       position: absolute;
+       top:100%; left:0; right:0;
+       background: #eee;
+       border-top: .1rem solid rgb(0,0,0,.1);
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   }
+
+   header #toggler:checked ~ .navbar{
+       clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+   header .navbar a{
+       margin: 1.5rem;
+       padding: 1.5rem;
+       background: #fff;
+       border: .1rem solid rgba(0,0,0,.1);
+       display: block;
+   }
+
+   .home .content h3{
+       font-size: 6rem;
+   }
+
+   .home .content span{
+    font-size: 3rem;
+    }
+
+    .features .feature img{
+        width: 50%;
+        height: 50%;
+    }
+    
+    .features .feauture span{
+        font-size: 2rem;
+    }
+
+    .single-product .rows{
+        text-align: left;
+    }
+
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width:450px) {
+
+    html{
+        font-size: 50%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+ 
+    .home .content span{
+     font-size: 2.5rem;
+     }
+
+     .heading {
+         font-size: 3rem;
+     }
+}
